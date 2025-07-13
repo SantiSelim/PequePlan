@@ -30,6 +30,7 @@ body {
 }
 
 .navbar-brand {
+  font-family: Poppins;
   font-weight: 600;
   font-size: 1.7rem;
   color: var(--dark-color);
@@ -71,9 +72,273 @@ p {
   color: #6c757d;
 }
 
+
+
+
+
+
+
+
+
+/* Estilos generales para el Hero Section */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 0px;
+  padding-top: 80px;
+}
+
+.hero-section .row {
+  margin-left: -6.5px;
+  margin-right: -10px;
+}
+
+.hero-section .col-lg-6 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.hero-left {
+  padding-left: 160px !important;
+  background-color: #FAF4ED;
+}
+
+.hero-left .content-wrapper {
+  max-width: 500px;
+  margin-right: auto;
+  padding-top: 300px; /* o ajustalo a lo que necesites */
+}
+
+.hero-right {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #FAF4ED;
+}
+
+.hero-image {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.piso-hero {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2; /* Asegura que esté por encima de la imagen del hero */
+  pointer-events: none; /* Opcional: evita que interfiera con clics */
+}
+
+
+/* Ocultar la versión mobile en pantallas grandes */
+.mobile-hero {
+  display: none !important;
+}
+
+/* Media query para pantallas pequeñas (mobile) */
+@media (max-width: 991.98px) {
+  .hero-section {
+    display: none !important;
+      
+  }
+
+  .mobile-hero {
+    display: flex !important;
+    position: relative;
+    padding-bottom: 0px !important;
+  }
+
+  .section-spacing {
+    padding-top: 100px;
+    min-height: 100vh;
+  }
+
+  .mobile-hero .col-12 {
+    text-align: left;
+  }
+
+  .mobile-hero .d-flex {
+    justify-content: flex-start;
+  }
+    
+  .piso-hero-mobile{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2; /* Asegura que esté por encima de la imagen del hero */
+  pointer-events: none; /* Opcional: evita que interfiera con clics */
+}
+
+.mobile-hero img.img-rounded:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  transition: none !important;
+  cursor: default !important;
+}
+}
+
+
+
+
+
+
+
+
+
+/*Qué es pequeplan*/
+.que-es-pequeplan {
+    background-color: #ffffff;
+}
+
+
+.que-incluye {
+    background-color: #C3A4FF;
+
+}
+
+
+
+/*Cómo Funciona*/
+
+.separator-img {
+  box-shadow: none !important;
+  transition: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  pointer-events: none; /* Opcional: evita interacción */
+}
+
+
+
+
+
+
+
+.instagram-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  margin: 0 auto;
+}
+
+.instagram-card-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 10px;
+}
+
+.instagram-avatar {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.instagram-user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  line-height: 1.2;
+}
+
+.instagram-username {
+  font-weight: bold;
+  display: block;
+}
+
+.instagram-location {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.instagram-username,
+.instagram-location {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+
+.instagram-post-image {
+  width: 100%;
+  display: block;
+}
+
+.instagram-card-actions {
+  display: flex;
+  justify-content: space-between; /* distribuye izquierda y derecha */
+  align-items: center;
+  padding: 10px 13px;
+}
+
+.instagram-actions-left {
+  display: flex;
+  gap: 15px;
+}
+
+.instagram-save-icon {
+  margin-left: auto;
+}
+
+
+.instagram-action-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.instagram-card-content {
+  padding: 0px 10px 15px 15px;
+  text-align: left;
+}
+
+.instagram-likes {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.instagram-card-content p {
+  margin: 5px 0;
+}
+
+.instagram-time {
+  font-size: 0.75rem;
+  color: #999;
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Botones */
 .btn {
-  border-radius: 50px;
+  border-radius: 6px;
   padding: 10px 30px;
   font-weight: 500;
   transition: all 0.3s ease-in-out;
@@ -105,11 +370,11 @@ section {
 
 section h2 {
   font-size: 2.5rem;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   position: relative;
 }
 
-section h2::after {
+/*section h2::after {
   content: "";
   display: block;
   width: 60px;
@@ -121,7 +386,7 @@ section h2::after {
 /* 6. CARDS */
 .card {
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
   overflow: hidden;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s;
@@ -152,6 +417,83 @@ section h2::after {
 .card-text {
   color: #6c757d;
 }
+
+
+.planes-bg {
+  background-color: #56C172; /* Cambiá el color a gusto */
+}
+
+
+
+.card-pricing2 {
+  background: var(--linear-2-paints, linear-gradient(180deg, #FFB73F 0%, #FFF 44.23%), linear-gradient(189deg, #D2CEFF -65.71%, #E0FFE8 27.74%));
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.card-pricing1 {
+  background: var(--linear-2-paints, linear-gradient(180deg, #C1FB63 0%, #FFF 44.23%));
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.card-pricing3 {
+  background: linear-gradient(180deg, #C3A4FF 0%, #FFF 44.23%), linear-gradient(189deg, #D2CEFF -65.71%, #E0FFE8 27.74%);
+  border: none;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.card-pricing1:hover, .card-pricing2:hover, .card-pricing3:hover {
+  transform: translateY(-5px);
+}
+
+.card-pricing1 .btn,.card-pricing2 .btn,.card-pricing3 .btn  {
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+.plan-nombre {
+    font-size: 4rem;
+    color: #170F49;
+    margin-bottom: -5px;
+}
+
+.plan-marca {
+    font-size: 1.8rem;
+    margin-bottom: -10px;
+    color: #170F49;
+    font-weight: 700;
+}
+
+.plan-precio {
+    font-family: Inter;
+    font-size: 2.25rem;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    color: #170F49;
+    font-weight: 700;
+}
+
+.caja-img {
+  max-width: 17.25rem; /* o el tamaño que prefieras */
+  height: auto;
+}
+
+
+.card-pricing1 img:hover,.card-pricing2 img:hover,.card-pricing3 img:hover {
+  box-shadow: none !important;
+}
+
+
 
 /* 7. TESTIMONIOS */
 .blockquote {
@@ -293,6 +635,7 @@ img.rounded-circle {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 
 
 /* ============================== */
