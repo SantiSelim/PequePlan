@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Visible - Belluccia 3</title>
+
+    <!-- Tipografía desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+     <!-- Tipografía desde Adobe Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/unu3jvk.css">
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR: Menú de navegación fijo superior -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo o nombre del sitio -->
+    <a class="navbar-brand" href="#">PequePlan</a>
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="home.html#hero">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="home.html#nosotros">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="home.html#suscripciones">Suscripciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="home.html#pequeswap">PequeSwap</a></li>
+        <li class="nav-item"><a class="nav-link" href="home.html#faq">Preguntas Frecuentes</a></li>
+        <li class="nav-item"><a class="nav-link" href="home.html#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+    
+    
+    
+ 
+    
+    
+    
+    
+    
+
+
+<section class="hero-section-detalle">
+  <div class="container-fluid h-100">
+    <div class="row h-100">
+      <div class="col-lg-6 hero-detalle-left d-flex">
+        <div class="content-wrapper">
+          <h1 class="h1-hero">PequePlan Aventurero</h1>
+          <p class="plan-precio">$16.000 <small>/ mes</small></p>
+          <p class="p-hero">
+            <strong>¡3 meses de desubirmiento, creatividad y juego en familia!</strong> <br>
+            La opción más elegida por las familias: 6 kits diversión guiada y recompensas exclusivas.
+          </p>
+          <div class="d-flex gap-3 mt-4">
+            <a href="#" class="btn btn-dark">¡SUSCRIBIRME AHORA!</a>
+            <a href="#" class="btn btn-outline-dark">Conocer más</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 hero-detalle-right">
+        <img src="media/Imagen%20Detalle%20Hero.png" alt="Imagen Hero Detalle" class="img-fluid hero-detalle-image">
+      </div>
+    </div>
+  </div>
+  <img src="media/Piso%20Hero.png" alt="Piso Hero Detalle" class="piso-hero-detalle">
+</section>
+
+<section class="section-spacing container d-lg-none d-flex align-items-center justify-content-between mobile-hero-detalle" style="min-height: 100vh; padding-top: 100px;">
+  <div class="row align-items-center">
+    <div class="col-12 mb-4">
+      <h1 class="h1-hero">PequePlan Aventurero</h1>
+      <p class="p-hero">
+        <strong>¡3 meses de desubirmiento, creatividad y juego en familia!</strong> <br>
+        La opción más elegida por las familias: 6 kits diversión guiada y recompensas exclusivas.
+      </p>
+      <div class="d-flex gap-3 mt-4">
+        <a href="#" class="btn btn-dark">¡SUSCRIBIRME AHORA!</a>
+        <a href="#" class="btn btn-outline-dark">Conocer más</a>
+      </div>
+    </div>
+    <div class="col-12 text-center">
+      <img src="media/Imagen%20Detalle%20Hero%20Mobile.png" class="img-fluid img-rounded" alt="Imagen Hero Detalle">
+    </div>
+  </div>
+  <img src="media/Piso%20Hero.png" alt="Piso Hero Detalle" class="piso-hero-detalle-mobile">
+</section>
+
+
+
+
+    
+
+    
+
+
+<!-- QueIncluye-Detalle -->
+<section class="queincluye-detalle text-center">
+    <div class="container">
+  <h2 class="h2-tituloseccion">¿Qué Incluye?</h2>
+  <p class="p-subtitulo">Descubrí todo lo que trae tu experiencia de juego.</p>
+  <div class="row gy-4">
+    
+    <!-- Columna Izquierda (solo imagen centrada) -->
+<!-- Columna Izquierda con imagen anclada abajo -->
+<div class="col-lg-6 position-relative">
+  <div class="detalle-box pequeswap-detalle position-relative overflow-visible" style="min-height: 300px;">
+    <img src="media/Que%20Incluye%20Detalle.png" 
+         alt="PequeSwap" 
+         class="img-fluid position-absolute bottom-0 start-50 translate-middle-x qid-img" 
+         style="max-height: 1000px;" />
+  </div>
+</div>
+
+
+    <!-- Columna Derecha con 4 recuadros -->
+    <div class="col-lg-6 d-flex flex-column gap-3">
+      
+<div class="detalle-box detalle-kits-educativos d-flex align-items-center p-3 rounded">
+  <div class="me-3 logo-container">
+    <img src="media/QueIncluyeIcono1.svg" alt="Kits Educativos" class="logo-detalle default-logo" />
+    <img src="media/QueIncluyeIcono1-hover.svg" alt="Kits Educativos Hover" class="logo-detalle hover-logo" />
+  </div>
+  <div class="text-detalle">
+    <h3 class="detalle-titulo">Kits Educativos</h3>
+    <p class="detalle-texto mb-0">Recibí 2 cajas al mes con actividades, materiales y propuestas creativas para jugar sin pantallas.</p>
+  </div>
+</div>
+
+<div class="detalle-box detalle-guiaspadres d-flex align-items-center p-3 rounded">
+  <div class="me-3 logo-container">
+    <img src="media/QueIncluyeIcono2.svg" alt="Guías para Padres" class="logo-detalle default-logo" />
+    <img src="media/QueIncluyeIcono2-hover.svg" alt="Guías para Padres Hover" class="logo-detalle hover-logo" />
+  </div>
+  <div class="text-detalle">
+    <h3 class="detalle-titulo">Guías para Padres</h3>
+    <p class="detalle-texto mb-0">Tips y sugerencias simples para acompañar el juego, estimular la curiosidad y fortalecer el vínculo en familia.</p>
+  </div>
+</div>
+
+<div class="detalle-box detalle-microvideos d-flex align-items-center p-3 rounded">
+  <div class="me-3 logo-container">
+    <img src="media/QueIncluyeIcono3.svg" alt="Microvideos" class="logo-detalle default-logo" />
+    <img src="media/QueIncluyeIcono3-hover.svg" alt="Microvideos Hover" class="logo-detalle hover-logo" />
+  </div>
+  <div class="text-detalle">
+    <h3 class="detalle-titulo">Acceso a Microvideos</h3>
+    <p class="detalle-texto mb-0">Cada actividad incluye un video breve que guía el paso a paso sin interferir con la experiencia de juego.</p>
+  </div>
+</div>
+
+<div class="detalle-box detalle-pequesorpresa d-flex align-items-center p-3 rounded">
+  <div class="me-3 logo-container">
+    <img src="media/QueIncluyeIcono4.svg" alt="Peque Sorpresa" class="logo-detalle default-logo" />
+    <img src="media/QueIncluyeIcono4-hover.svg" alt="Peque Sorpresa Hover" class="logo-detalle hover-logo" />
+  </div>
+  <div class="text-detalle">
+    <h3 class="detalle-titulo">PequeSorpresa</h3>
+    <p class="detalle-texto mb-0">Da la bienvenida a la aventura Pecon una sorpresa que suma emoción desde el primer envío.</p>
+  </div>
+</div>
+</div>
+    </div>
+  </div>
+</section>
+<!-- /QueIncluye-Detalle -->
+
+
+    
+
+
+
+
+
+
+
+    
+
+    
+
+
+   
+
+
+    
+        <!-- TEAM: Presentación del equipo -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-tituloseccion">¿Cómo Funciona?</h2>
+  <p class="p-subtitulo">¡Es muy fácil empezar a jugar!</p>
+
+  <div class="row justify-content-center align-items-center">
+    <!-- Paso 1 -->
+    <div class="col-md-2 mb-4">
+      <img src="media/CF%20Icono%201.svg" class="mb-3 img-fluid" style="border-radius: 30px;" alt="Paso 1">
+      <h5>Elegí tu plan<br>favorito</h5>
+    </div>
+
+    <!-- Separador -->
+    <div class="col-12 col-md-1 text-center separator-wrapper">
+
+      <img src="media/CF%20Icono%20Flecha.svg" alt="→" class="mx-auto d-block separator-img">
+    </div>
+
+    <!-- Paso 2 -->
+    <div class="col-md-2 mb-4">
+      <img src="media/CF%20Icono%202.svg" class="mb-3 img-fluid" style="border-radius: 30px;" alt="Paso 2">
+      <h5>Recibí tu caja PequePlan</h5>
+    </div>
+
+    <!-- Separador -->
+    <div class="col-12 col-md-1 text-center separator-wrapper">
+      <img src="media/CF%20Icono%20Flecha.svg" alt="→" class="mx-auto d-block separator-img">
+    </div>
+
+    <!-- Paso 3 -->
+    <div class="col-md-2 mb-4">
+      <img src="media/CF%20Icono%203.svg" class="mb-3 img-fluid" style="border-radius: 30px;" alt="Paso 3">
+      <h5>Jugá, descubrí y divertite</h5>
+    </div>
+
+    <!-- Separador -->
+    <div class="col-12 col-md-1 text-center separator-wrapper">
+
+      <img src="media/CF%20Icono%20Flecha.svg" alt="→" class="mx-auto d-block separator-img">
+    </div>
+
+    <!-- Paso 4 -->
+    <div class="col-md-2 mb-4">
+      <img src="media/CF%20Icono%204.svg" class="mb-3 img-fluid" style="border-radius: 30px;" alt="Paso 4">
+      <h5>Intercambiá con PequeSwap</h5>
+    </div>
+  </div>
+</section>
+   
+    
+    
+
+
+
+<!-- Beneficios Aventurero -->   
+<section class="beneficios-detalle container my-5">
+ <div class="text-center mb-4">
+    <h2 class="h2-tituloseccion">Beneficios del Plan Aventurero</h2>
+    <p class="p-subtitulo">Descubrí los beneficios de este plan.</p>
+  </div>
+  <div class="row gy-4">
+    <!-- Recuadro PequeSwap (más ancho) -->
+    <div class="col-lg-8">
+      <div class="detalle-box pequeswap-detalle h-100">
+        <div class="row align-items-start">
+          <div class="col-md-6">
+            <h2 class="detalle-titulo">Acceso a PequeSwap</h2>
+            <p class="parrafosecciones">Intercambía kits ya usados por nuevos desafíos en librerías y jugueterías educativas de tu comunidad. <br> <strong>¡Más juego, menos desperdicio!</strong></p>
+            <a href="#" class="btn btn-dark">CONOCER MÁS</a>
+          </div>
+          <div class="col-md-6 text-start">
+            <img src="media/Imagen-PequeSwap-Beneficios.png" alt="PequeSwap" class="img-fluid img-rounded img-pequeswapdetalle" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Recuadro Descuento (más angosto, sin imagen) -->
+    <div class="col-lg-4">
+      <div class="detalle-box descuento-detalle h-100">
+        <h2 class="detalle-titulo">10% de Descuento</h2>
+        <p class="parrafosecciones">Accedé a locales aliados de tu comunidad que promueven el juego creativo, y descubrí beneficios exclusivos pensados para familias como la tuya.</p>
+        <a href="#" class="btn btn-dark">CONOCER MÁS</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Beneficios Aventurero -->   
+
+ 
+    
+    
+    
+    
+    
+    
+  <section class="testimoniales-detalle" style="color: #000; background-color: #FAF4ED;">
+  <div class="container py-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-10 col-xl-8 text-center">
+        <h2 class="h2-tituloseccion">Testimonios del Plan Aventurero</h2>
+        <p class="p-subtitulo"> Descubrí lo que dicen nuestros clientes sobre este plan.
+        </p>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <!-- Tarjeta 1 -->
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="testimoniales-detalle-card card">
+          <div class="testimoniales-detalle-card-body card-body py-4 mt-2">
+            <div class="testimoniales-detalle-img-wrapper d-flex justify-content-center mb-4">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp"
+                class="rounded-circle shadow-1-strong" width="100" height="100" />
+            </div>
+            <h5 class="testimoniales-detalle-nombre font-weight-bold">Teresa May</h5>
+            <h6 class="testimoniales-detalle-titulo font-weight-bold my-3">Founder at ET Company</h6>
+            <ul class="testimoniales-detalle-rating list-unstyled d-flex justify-content-center">
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+            </ul>
+            <p class="testimoniales-detalle-texto mb-2">
+              <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="col-md-4 mb-4 mb-md-0">
+        <div class="testimoniales-detalle-card card">
+          <div class="testimoniales-detalle-card-body card-body py-4 mt-2">
+            <div class="testimoniales-detalle-img-wrapper d-flex justify-content-center mb-4">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(15).webp"
+                class="rounded-circle shadow-1-strong" width="100" height="100" />
+            </div>
+            <h5 class="testimoniales-detalle-nombre font-weight-bold">Maggie McLoan</h5>
+            <h6 class="testimoniales-detalle-titulo font-weight-bold my-3">Photographer at Studio LA</h6>
+            <ul class="testimoniales-detalle-rating list-unstyled d-flex justify-content-center">
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+            </ul>
+            <p class="testimoniales-detalle-texto mb-2">
+              <i class="fas fa-quote-left pe-2"></i>Autem, totam debitis suscipit saepe sapiente magnam...
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="col-md-4 mb-0">
+        <div class="testimoniales-detalle-card card">
+          <div class="testimoniales-detalle-card-body card-body py-4 mt-2">
+            <div class="testimoniales-detalle-img-wrapper d-flex justify-content-center mb-4">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(17).webp"
+                class="rounded-circle shadow-1-strong" width="100" height="100" />
+            </div>
+            <h5 class="testimoniales-detalle-nombre font-weight-bold">Alexa Horwitz</h5>
+            <h6 class="testimoniales-detalle-titulo font-weight-bold my-3">Front-end Developer in NY</h6>
+            <ul class="testimoniales-detalle-rating list-unstyled d-flex justify-content-center">
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+              <li><i class="bi bi-star-fill"></i></li>
+            </ul>
+            <p class="testimoniales-detalle-texto mb-2">
+              <i class="fas fa-quote-left pe-2"></i>Cras sit amet nibh libero, in gravida nulla...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>  
+    
+    
+ <!-- Recordatorio Plan -->   
+<section class="section-spacing container text-center">
+    <div class="recordatorio-plan">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="plan-nombre">¡Empezá a jugar con el PequePlan Aventurero!</h1> <!-- Corregido ! -->
+          <ul class="list-unstyled"> <!-- Estaba mal: el <ul> estaba dentro del <p> -->
+            <li class="d-flex align-items-start mb-2">
+              <i class="bi bi-check-square me-2"></i>
+              <span>2 Kits creativos por mes.</span>
+            </li>
+            <li class="d-flex align-items-start mb-2">
+              <i class="bi bi-check-square me-2"></i>
+              <span>Guía + Videos.</span>
+            </li>
+            <li class="d-flex align-items-start mb-2">
+              <i class="bi bi-check-square me-2"></i>
+              <span>Acceso a PequeSwap.</span>
+            </li>
+            <li class="d-flex align-items-start">
+              <i class="bi bi-check-square me-2"></i>
+              <span>10% de descuento en jugueterías y librerías asociadas.</span>
+            </li>
+            <li class="d-flex align-items-start">
+              <i class="bi bi-check-square me-2"></i>
+              <span>PequeSorpresa en la primera caja.</span>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-dark">¡SUSCRIBIRME AHORA!</a>
+        </div>
+        <div class="col-lg-5 text-center mt-4 mt-lg-0">
+          <img src="media/Caja%202.png" class="img-fluid img-rounded" alt="Imagen ilustrativa"/>
+        </div>
+      </div>
+    </div>
+</section>
+<!-- /Recordatorio Plan -->      
+    
+    
+    
+    
+   
+    
+ 
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+
+
+
+
+
+
+
+
+<section class="section-spacing text-center planes-bg">
+  <div class="container">
+    <h2 class="h2-tituloseccionclaro">Otras suscripciones</h2>
+    <p class="p-subtitulo">Elegí el plan que mejor se adapta a tus necesidades. Cada uno incluye diferentes beneficios pensados para vos.</p>
+
+    <div class="row mt-5">
+      
+      <!-- Card: Plan Básico con offset para centrar -->
+      <div class="col-md-4 offset-md-2 mb-4">
+        <div class="card-pricing1 p-4 h-100 text-start">
+          <img src="media/Caja%201.png" class="img-fluid d-block mx-auto my-3 caja-img" alt="Plan Pro">
+          <h3 class="plan-marca">PequePlan</h3>
+          <h1 class="plan-nombre">Explorador</h1>
+          <p class="p-custom">Ideal para quienes quieren probar.<br>Duración: 1 meses (2 cajas)</p>
+          <p class="plan-precio">$20.000 <small>/ mes</small></p>
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-start mb-2">
+              <i class="bi bi-check-square me-2"></i>
+              <span>2 kits creativos por mes</span>
+            </li>
+            <li class="d-flex align-items-start mb-2">
+              <i class="bi bi-check-square me-2"></i>
+              <span>Guía + Videos </span>
+            </li>
+            <li class="d-flex align-items-start mb-2">
+              <i class="bi bi-check-square me-2"></i>
+              <span>Acceso a PequeSwap</span>
+            </li>
+            <li class="d-flex align-items-start">
+              <i class="bi bi-check-square me-2"></i>
+              <span>10% de descuento en jugueterías y librerías asociadas.</span>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-dark">¡QUIERO ESTE!</a>
+        </div>
+      </div>
+
+      <!-- Card: Plan Full -->
+      <div class="col-md-4 mb-4">
+        <div class="card-pricing3 p-4 h-100 text-start">
+          <img src="media/Caja%203.png" class="img-fluid d-block mx-auto my-3 caja-img" alt="Plan Pro">
+          <h3 class="plan-marca">PequePlan</h3>
+          <h1 class="plan-nombre">Súper</h1>
+          <p class="p-custom">Ideal para jugar cada mes.<br>Duración: 3 meses (6 cajas)</p>
+          <p class="plan-precio">$14.000 <small>/ mes</small></p>
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-start mb-2">
+              <i class="bi bi-check-square me-2"></i>
+              <span>Todo lo del plan Aventurero</span>
+            </li>
+            <li class="d-flex align-items-start mb-2">
+              <i class="bi bi-check-square me-2"></i>
+              <span>Envío gratis</span>
+            </li>
+            <li class="d-flex align-items-start mb-2">
+              <i class="bi bi-check-square me-2"></i>
+              <span>Acceso anticipado a nuevos kits</span>
+            </li>
+            <li class="d-flex align-items-start">
+              <i class="bi bi-check-square me-2"></i>
+              <span>Tarjeta PequeClub (con beneficios exclusivos en experiencias, sorteos y talleres virtuales)</span>
+            </li>
+          </ul>
+          <a href="#" class="btn btn-dark">¡QUIERO ESTE!</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- /PLANES DE SUSCRIPCIÓN --> 
+
+
+
+
+
+
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+
+ 
+
+
+    
+
+
+
+
+
+    
+    
+    
+ 
+    
+    
+        
+    
+    
+
+
+    
+    
+    
+    
+   
+
+
+
+
+
+    
+    
+
+
+
+
+  
+
+
+    
+    
+        
+ <!-- FAQS: Preguntas frecuentes -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-tituloseccion">Preguntas Frecuentes</h2>
+  <div class="row mt-5 text-start" id="faqAccordion">
+    <!-- Columna izquierda -->
+    <div class="col-md-6">
+      <div class="accordion" id="faqColumnLeft">
+        <!-- Pregunta 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              ¿Qué diferencia al PequePlan Aventurero del Explorador?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqColumnLeft">
+            <div class="accordion-body">
+              El PequePlan Aventurero no solo incluye más cajas (6 en total durante 3 meses), sino que además te da acceso a PequeSwap (para intercambiar kits ya completados), 10% de descuento en jugueterías y librerías asociadas, y una PequeSorpresa exclusiva en la primera caja.
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              ¿Cómo funciona el beneficio de PequeSwap?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqColumnLeft">
+            <div class="accordion-body">
+Una vez que completás tus kits, podés llevarlos a librerías o jugueterías participantes y canjearlos por nuevos desafíos. Es una forma divertida de extender la experiencia sin acumular materiales en casa.            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              ¿Dónde puedo usar el 10% de descuento?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqColumnLeft">
+            <div class="accordion-body">
+              Al suscribirte al plan Aventurero, te damos una lista de librerías y jugueterías educativas que forman parte del programa. Solo mostrás tu número de suscripción y obtenés automáticamente el descuento.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Columna derecha -->
+    <div class="col-md-6">
+      <div class="accordion" id="faqColumnRight">
+        <!-- Pregunta 4 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              ¿Qué incluye la PequeSorpresa?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqColumnRight">
+            <div class="accordion-body">
+              ¡Es un regalo especial solo para suscriptores del plan Aventurero! Puede ser un mini-kit extra, un juego imprimible exclusivo o materiales especiales para potenciar alguna de las actividades. ¡Toda una sorpresa!
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              ¿Puedo pasarme al PequePlan Súper más adelante?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqColumnRight">
+            <div class="accordion-body">
+              Sí, podés actualizar tu suscripción en cualquier momento desde tu cuenta. Al hacerlo, accedés automáticamente a los beneficios extra del plan Súper: envío gratis, acceso anticipado a kits, y la Tarjeta PequeClub.
+            </div>
+          </div>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSix">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              ¿Es posible regalar el PequePlan Aventurero?
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqColumnRight">
+            <div class="accordion-body">
+             ¡Claro! Podés elegir la opción de "Regalar una suscripción" al momento de comprar. Ingresás los datos del destinatario y nosotros nos encargamos del resto: le llegará su primera caja con una tarjeta de bienvenida personalizada.
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    
+    <!-- Contact Form-->
+<section class="section-spacing container">
+  <div class="row align-items-start">
+    <!-- Columna de texto -->
+    <div class="col-lg-4">
+      <h2 class="h2-tituloseccion">Contactános</h2>
+      <p class="p-subtitulo">¿Te quedó alguna duda? No dudes en consultar y te ayudaremos con lo que necesites.</p>
+    </div>
+    <!-- Columna de Formulario --> 
+    <div class="col-lg-8 text-center mt-4 mt-lg-0">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Tu nombre">
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Tu email">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Enviar Mensaje</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+<!-- SECCIÓN NEWSLETTER -->
+    
+<section class="section-spacing container text-center newsletter-section">
+  <h2 class="h2-tituloseccion">¡No te pierdas los nuevo de PequePlan!</h2>
+  <p class="p-subtitulo">Suscribite al newsletter y recibí ideas, descuentos y novedades.</p>
+  
+  <div class="newsletter-form-wrapper">
+    <input type="email" class="form-control newsletter-input" placeholder="Tu email">
+    <a href="#" class="btn newsletter-btn">Suscribirse</a>
+  </div>
+</section>
+
+
+    
+
+     
+    <div class="footer-pequeplan pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row">
+      <!-- Marca -->
+      <div class="col-md-2 mb-4">
+        <a class="navbar-brand" href="#">PequePlan</a>
+      </div>
+
+      <!-- Learn More -->
+      <div class="col-md-2 mb-4">
+        <h4>Navegación</h4>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">About Lift</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Press Releases</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Environment</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Jobs</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Tickets & Booking -->
+      <div class="col-md-2 mb-4">
+        <h4>PequePlan</h4>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Lift Tickets</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Season Passes</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Vacation Packages</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Us -->
+      <div class="col-md-3 mb-4">
+        <h4>Atención al Cliente</h4>
+        <p class="mb-1">Hotel Reservation: <strong>123-456-7890</strong></p>
+        <p class="mb-0">Ticket Office: <strong>123-456-7890</strong></p>
+      </div>
+
+      <!-- Social -->
+      <div class="col-md-3 mb-4">
+        <h5>Social</h5>
+        <div class="d-flex gap-3">
+          <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Line -->
+    <div class="text-center border-top border-secondary pt-3 mt-4 small text-muted">
+      <p>© 2025 Belluccia 3 - Visible Template. Todos los derechos reservados.<br> Santiago Selim Castro. Comisión 2</p>
+    </div>
+  </div>
+</div>   
+    
+    
+
+    
+
+
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+</body>
+</html>
