@@ -1291,6 +1291,13 @@ font-size: 4rem;
 }
 
 
+
+@media (max-width: 576px) {
+    .h1-hero {
+    font-size: 3.3rem;
+    }
+    }
+
 /* PÁRRAFOS Y TEXTOS */
 .p-custom {
   font-size: 1rem;
@@ -1398,6 +1405,12 @@ font-size: 4rem;
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+
+
+
+
+
 
 /* ============================== */
 /* MEDIA QUERIES */
